@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .start {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .navbar a {
+            text-decoration: none;
+            padding: 14px 16px;
+            font-size: 16px;
+            font-family: cursive;
+        }
+
+        .row1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .row1 img {
+            height: 400px;
+            width: 300px;
+            padding: 10px;
+        }
+
+        .row2 {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .row2 img {
+            height: 400px;
+            width: 890px;
+            margin: auto;
+        }
+
+        @media screen and (max-width:600px) {
+            .start {
+                font-size: 15px;
+            }
+
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .row1 {
+                flex-direction: column;
+            }
+
+            .row1 img {
+                width: 100%;
+            }
+
+            .row2 {
+                flex-direction: column;
+            }
+
+            .row2 img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="start">
+        <h2>Bohemian</h2>
+    </div>
+    <div class="navbar">
+        <a href="#">WHAT'S NEW</a>
+        <a href="#">WOMEN</a>
+        <a href="#">DRESSES</a>
+        <a href="#">CLASSIC</a>
+        <a href="#">CURVE</a>
+        <a href="#">CAMPAIGN</a>
+        <a href="#">OUTLET</a>
+        <a href="#">SALE</a>
+    </div>
+    <div class="row1">
+        <img src="https://cdn.shopify.com/s/files/1/1170/9506/products/Bohemia_Leather_Mules_Moroccan_Mirror_640x.progressive.jpg?v=1621424486"
+            alt="shoes">
+        <img src="https://cdn.shopify.com/s/files/1/1170/9506/files/Bohemia-design-Moroccan-basket-Parisienne-shopper-promo_1700x.progressive.jpg?v=1621510058"
+            alt="leather">
+        <img src="https://cdn.shopify.com/s/files/1/1170/9506/products/Tassels-Large-Group_large.jpg?v=1542370086"
+            alt="colors">
+    </div>
+    <div class="row2">
+        <img src="https://cdn.shopify.com/s/files/1/1170/9506/files/Bohemia_HalfMoon_Basket_Landscape_1_1700x.progressive.jpg?v=1611477964"
+            alt="code">
+    </div>
+</body>
+
+</html>
