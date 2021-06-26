@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            background-color: rgb(103, 103, 161);
+            color: white;
+        }
+
+        .one {
+            background-color: #1b1b32;
+            height: 1100px;
+            width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            font-style: bold;
+            border-radius: 5px;
+        }
+
+        input[type=text] {
+            height: 1px;
+            width: 600px;
+            padding: 20px 12px;
+            border: 1px solid rgb(85, 115, 247);
+            border-radius: 5px;
+            display: block;
+            margin: 10px 0;
+        }
+
+        label {
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="margin-top:30px;font-style:arial;font-weight: 30px;text-align: center;letter-spacing: 1px;">freeCodeCamp
+        survey form</h1>
+    <p style="font-style: italic;margin-top:5px;font-weight:40px;text-align: center;letter-spacing: 1px;">Thank you for
+        taking the time to
+        help us improve the platform</p>
+    <br>
+    <div class="one">
+        <form style="padding-left: 50px;padding-top:30px;letter-spacing: 1px;color:rgb(229, 229, 241)">
+            <label for="name"><b>Name</b></label><br>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <br>
+            <label for="email"><b>Email</b></label><br>
+            <input type="text" id="email" placeholder="Enter your email" required>
+            <br>
+            <label for="age"><b>Age(optional)</b></label><br>
+            <input type="text" id="age" placeholder="Enter your age">
+            <br>
+            <label for="role"><b>Which option best describes your current role?</b></label><br>
+            <br>
+            <select id="role" style="width:627px;height:30px;border-radius:5px;" name="role"
+                placeholder="Select Current Role">
+                <option value="Select Current Role" disabled>Select Current Role</option>
+                <option value="Student">Student</option>
+                <option value="Full Time Job">Full Time Job</option>
+                <option value="Full Time Learner">Full Time Learner</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="other">other</option>
+            </select>
+            <h4><b>Would you recommend freeCodeCamp to a friend?</b></h4>
+            <input type="radio" id="definitely" name="yes" value="Definitely">
+            <label for="definitely">Definitely</label>
+            <br>
+            <input type="radio" id="maybe" name="yesno" value="Maybe">
+            <label for="maybe">Maybe</label>
+            <br>
+            <input type="radio" id="notsure" name="no" value="Not Sure">
+            <label for="notsure">Not Sure</label>
+            <br>
+            <label for="feature"><b>What is your favorite feature of freeCodeCamp?</b></label><br>
+            <br>
+            <select id="feature" style="width:627px;height:30px;border-radius:5px;" name="feature"
+                placeholder="Select an Option">
+                <option value="Select an Option" disabled>Select an Option</option>
+                <option value="Challenges">Challenges</option>
+                <option value="Projects">Projects</option>
+                <option value="Community">Community</option>
+                <option value="Open Source">Open Source</option>
+            </select>
+            <br>
+            <h4><b>What would you like to see improved? (Check all that apply)</b></h4>
+            <input type="checkbox" id="fend" name="frontend" value="frontendp">
+            <label for="fend">Front-end Projects</label>
+            <br>
+            <input type="checkbox" id="bend" name="backend" value="backtendp">
+            <label for="bend">Back-end Projects</label>
+            <br>
+            <input type="checkbox" id="data" name="data" value="Data Visualization">
+            <label for="data">Data Visualization</label>
+            <br>
+            <input type="checkbox" id="chal" name="chal" value="Challenges">
+            <label for="chal">Challenges</label>
+            <br>
+            <input type="checkbox" id="open" name="open" value="Open Source Community">
+            <label for="open">Open Source Community</label>
+            <br>
+            <input type="checkbox" id="gitter" name="git" value="Gitter help rooms">
+            <label for="gitter">Gitter help rooms</label>
+            <br>
+            <input type="checkbox" id="wiki" name="wiki" value="Wiki">
+            <label for="wiki">Wiki</label>
+            <br>
+            <br>
+            <h4><b>Any comments or suggestions?</b></h4><br>
+            <textarea name="message" placeholder="Enter your comments here..."
+                style="width:627px;height:100px;border-radius:5px;"></textarea>
+            <br>
+            <br>
+            <input type="Submit"
+                style="background-color:rgb(78, 160, 96);color:white;font-weight:300px;font-family: 'Courier New', Courier, monospace; height:50px;width:627px;border-radius:5px"
+                value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

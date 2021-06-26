@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b2ZmaWNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+            max-width: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+        }
+
+        .background {
+            border: 1px solid black;
+            background-color: #ffffff;
+            opacity: 0.6;
+            margin-top: 100px;
+            margin-bottom: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 550px;
+            width: 450px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        div.background p {
+            color: rgb(29, 26, 26);
+            padding-top: 20px;
+            font-size: 40px;
+            font-family: Lobster, monospace;
+        }
+
+        @media screen and (max-width:760px) {
+            body {
+                max-width: 100%;
+            }
+
+            .background {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width:480px) {
+            body {
+                max-width: 100%;
+            }
+
+            .background {
+                width: 80%;
+            }
+        }
+
+        div.icons span {
+            margin-top: 30px;
+            font-size: 25px;
+            float: right;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <span class="material-icons" style="float:right;font-size:25px;padding-right:10px;padding-top:10px;">
+            cancel
+        </span>
+        <p>LOGIN PAGE</p>
+        <form action="#" target="_blank">
+            <input type="text"
+                style="padding:20px;margin-top:40px;border-radius:10px;font-size:20px;border:2px solid brown;width:60%;box-shadow: 0 0 5px rgba(0, 31, 153, 1);"
+                placeholder="USERNAME" name="fullname">
+
+            <input type="password"
+                style="padding:20px;margin-top:40px;border-radius:10px;font-size:20px;border:2px solid brown;width:60%;box-shadow: 0 0 5px rgba(0, 31, 153, 1);"
+                placeholder="PASSWORD" name="password">
+            <br>
+            <button type="button"
+                style="margin-top:30px;padding:18px;font-size:20px;border-radius:18px;width:40%;box-shadow:0 0 5px rgba(0,31,153,1);">Log
+                In</button>
+        </form>
+        <br>
+        <div class="icons">
+            <span class="material-icons">
+                settings
+            </span>
+            <span class="material-icons">
+                info
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
